@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
-
     @GetMapping("/checkStatus")
     public ResponseEntity<String> checkStatus(){
         return new ResponseEntity<>("Service is up and running", HttpStatus.OK);
